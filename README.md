@@ -1,6 +1,6 @@
 **What is angular elements?**
 
-Angular elements are Angular components packaged as custom elements (also called Web Components), a web standard for defining new HTML elements in a framework-agnostic way. Read more https://angular.io/guide/elements#browser-support-for-custom-elements
+Angular elements are Angular components packaged as custom elements (also called Web Components), a web standard for defining new HTML elements in a framework-agnostic way. Read more [here](https://angular.io/guide/elements#browser-support-for-custom-elements)
 
 
 **How to run?**
