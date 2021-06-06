@@ -1,27 +1,14 @@
-# AngularElements
+**What is angular elements?**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+Angular elements are Angular components packaged as custom elements (also called Web Components), a web standard for defining new HTML elements in a framework-agnostic way. Read more https://angular.io/guide/elements#browser-support-for-custom-elements
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**How to run?**
 
-## Code scaffolding
+Go to `angular-elements` directory run `npm run build:elements` this will create an elements folder with all the required fields. Create an `index.html` file and add `styles.css` and `scripts.js` in the file. And use the element tag in body. Here `<fy-charts></fy-charts>`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Since we can pass custom data to `fy-charts` component i.e `chartType` and `chartLegend` which is used to show a specific type of graph and whether to show legend or not respectively.
 
-## Build
+We can do this by using this line of html `<fy-charts chart-legend="true" chart-type="doughnut"></fy-charts>`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Now run the `elements/index.html` file on any browser.
