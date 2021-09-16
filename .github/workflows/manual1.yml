@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: get-branch
-      uses: actions/github-script@0.9.0
+      uses: xom9ikk/split@v1
       with:
         string: ${{ github.ref }}
         separator: refs/heads/
