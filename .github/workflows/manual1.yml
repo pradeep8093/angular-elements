@@ -20,4 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "Log: ${{ github.repository.substring(11) }}"
+        script: |
+        const branch = github.repository.substring(11).value.split('refs/heads/')[1]
+        core.setOutput('branch', branch)
+        echo "Log: ${{ branch }}"
