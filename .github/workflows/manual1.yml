@@ -21,6 +21,6 @@ jobs:
     steps:
     - run: |
         script: |
-        const branch = github.repository.substring(11).value.split('refs/heads/')[1]
-        core.setOutput('branch', branch)
-        echo "Log: ${{ branch }}"
+          const branch = github.repository.substring(11).value.split('refs/heads/')[1]
+          core.setOutput('branch', branch)
+        echo "Log: ${{ $branch }}"
