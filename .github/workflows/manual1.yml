@@ -19,7 +19,7 @@ jobs:
   printInputs:
     runs-on: ubuntu-latest
     steps:
-    - branch: get-branch
+    - id: get-branch
       uses: actions/github-script@0.9.0
       with:
         script: |
