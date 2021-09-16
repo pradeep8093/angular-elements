@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "Log: ${{ YAML.stringify(github.event) }}"
+        echo "Log: ${{ toJSON(github.event) }}"
