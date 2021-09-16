@@ -26,4 +26,4 @@ jobs:
             const branch = context.payload.client_payload.value.split('-')[1]
             core.setOutput('branch', branch)
     - run: |
-        echo "Log: ${{ steps.branch.outputs.branch }}"
+        echo "Log: ${{ steps.get-branch.outputs.branch }}"
