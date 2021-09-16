@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "Log: ${{ github.repository.split('refs/heads/')[1] }}"
+        echo "Log: ${{ github.repository.substring(11) }}"
