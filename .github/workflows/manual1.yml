@@ -19,11 +19,8 @@ jobs:
   printInputs:
     runs-on: ubuntu-latest
     steps:
-    
-       - name: Rename file
-         run: |
-            echo "123"
-       - id: get-branch
+       - name: Get branch name
+         id: get-branch
          uses: xom9ikk/split@v1
          with:
             string: ${{ github.ref }}
