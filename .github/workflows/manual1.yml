@@ -26,6 +26,6 @@ jobs:
             string: ${{ github.ref }}
             separator: refs/heads/
        - name: Msg
-       - run: |
+         run: |
             echo "Log: ${{ steps.get-branch.outputs._1 }}"
         
