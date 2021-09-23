@@ -19,10 +19,16 @@ jobs:
   printInputs:
     runs-on: ubuntu-latest
     steps:
-    - id: get-branch
-      uses: xom9ikk/split@v1
-      with:
-        string: ${{ github.ref }}
-        separator: refs/heads/
-    - run: |
-        echo "Log: ${{ steps.get-branch.outputs._1 }}"
+    
+       - name: Rename file
+         run: |
+            echo "123"
+       - id: get-branch
+         uses: xom9ikk/split@v1
+         with:
+            string: ${{ github.ref }}
+            separator: refs/heads/
+       - name: Msg
+       - run: |
+            echo "Log: ${{ steps.get-branch.outputs._1 }}"
+        
